@@ -33,8 +33,9 @@ void draw() {
 
 //// SCENE:  sky, sun, tree, house, etc.
 void scene() {  
-  /* INSERT YOUR CODE HERE! */
-  /* REPLACE THIS STUB! */  text( "scene", 10, 10 );
+  /* INSERT YOUR CODE HERE! */    background( 200,255,255 );
+  fill(0);
+  /* REPLACE THIS STUB! */  text( "scene", 100, 100 );
 }
 
 void messages() {
@@ -46,13 +47,19 @@ void messages() {
 //// ACTION:  move (x,y) coordinates of hero & dog; show them.
 void hero() {
   /* INSERT YOUR CODE HERE! */
-  /* REPLACE THIS STUB! */  text( "[[[[ Zoog. ]]]]", 40, 20 );
+  /* REPLACE THIS STUB! */  text( "[[[[ Zoog. ]]]]", 200, 200 );
+  rect( x,y, 50,80 );
 }
 void dog() {
-  dogX=  dogX + (dogX-x)/30;
-  dogY=  dogY + (dogY-x)/40;
+  dogX=  dogX - (dogX-x)/30;
+  dogY=  dogY - (dogY-y)/40;
+  text( dogX, 10, 10 );
+  text( dogY, 10, 20 );
+  //
+  fill( 150,0,0 );
+  rect(dogX,dogY, 60,30 );
   /* INSERT YOUR CODE HERE! */
-  /* REPLACE THIS STUB! */  text( "woof, woof!!!", 50, 50 );
+  /* REPLACE THIS STUB! */  text( "woof, woof!d!!", 150, 150 );
 }
 
 
