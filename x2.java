@@ -202,7 +202,14 @@ void dog() {
   //if( count / 30 % 2 == 0) {
       //dog ear
   //  fill(255);
-  //  rect(dogX + 35, dogY - 5, 20, 30);
+  //  rect(dogX + 35, dogY - 5, 20, 30);  /* ear
+  //  rect(dogX + 35, dogY + 10, 15, 25);
+  
+  // else {
+     //   rect(dogX + 35, dogY - 5, 20, 30);  /* ear
+     //   rect( dogX - 5, dogY - 5,  15, 25)
+    
+  //}
     
      
   //}
