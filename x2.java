@@ -6,6 +6,8 @@ String author=  "Gershom Raymundo";
 String title=  " Doggy chases ChAR1i3 ";
 String help=  " Click to relocate hero \n 'q' to quit; 'r' to reset. ";
 
+int count = 0;
+
 
 //// GLOBALS:  coordinates, speed, etc.
 float horizon;
@@ -25,6 +27,7 @@ void setup() {
 
 //// NEXT FRAME:  scene, action, show.
 void draw() {
+  count = count + 1;
   scene();
   hero();
   dog();
@@ -171,7 +174,7 @@ void dog() {
   rect(dogX,dogY, 60,30 );
   
   //dog legs
-  rect(dogX, dogY + 10, 15 , 25);
+ 
   rect(dogX + 35, dogY + 10, 15, 25);
   
   //dog ear
@@ -184,6 +187,18 @@ void dog() {
   //Name that follows doggy
   fill(0); 
   text( "RUFF! WOOF! ", dogX, dogY + 45 );
+  
+  //animation - back leg
+  if ( count / 30 % 2 == 0) {
+        fill(169,79,2);
+        rect(dogX, dogY + 10, 15 , 25);      
+  }
+  else {
+    fill( 169, 79, 2);
+    rect(dogX - 10, dogY + 10, 20, 15);
+  }
+  
+  
 }
 
 
