@@ -175,11 +175,7 @@ void dog() {
   
   //dog legs
  
-  rect(dogX + 35, dogY + 10, 15, 25);
   
-  //dog ear
-  fill(255);
-  rect(dogX + 35, dogY - 5, 20, 30);
   
   //dog head
    rect(dogX + 60, dogY + 7, 15, 20);
@@ -199,20 +195,29 @@ void dog() {
   }
   
   //animation - front leg
-  //if( count / 30 % 2 == 0) {
+  if( count / 30 % 2 == 0) {
+      //leg movement
+        fill( 162, 79, 2 );
+        rect(dogX + 35, dogY + 10, 15, 25);
+      
       //dog ear
-  //  fill(255);
-  //  rect(dogX + 35, dogY - 5, 20, 30);  /* ear
-  //  rect(dogX + 35, dogY + 10, 15, 25);
+    fill(255);
+    rect(dogX + 35, dogY - 5, 20, 30);  
+    
+  }
   
-  // else {
-     //   rect(dogX + 35, dogY - 5, 20, 30);  /* ear
-     //   rect( dogX - 5, dogY - 5,  15, 25)
-    
-  //}
-    
+   else {
+        //front leg
+        fill( 162, 79, 2 );
+        rect(dogX + 25, dogY + 15, 25, 10);
      
-  //}
+     
+     
+        //ear movement
+        fill(255);
+        rect( dogX + 20, dogY - 5,  35, 20);
+    
+  }
   
   
 }
