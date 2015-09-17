@@ -198,6 +198,15 @@ void dog() {
     rect(dogX - 10, dogY + 10, 20, 15);
   }
   
+  //animation - front leg
+  //if( count / 30 % 2 == 0) {
+      //dog ear
+  //  fill(255);
+  //  rect(dogX + 35, dogY - 5, 20, 30);
+    
+     
+  }
+  
   
 }
 
