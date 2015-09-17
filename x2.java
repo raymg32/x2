@@ -205,7 +205,7 @@ void dog() {
   //  rect(dogX + 35, dogY - 5, 20, 30);
     
      
-  }
+  //}
   
   
 }
