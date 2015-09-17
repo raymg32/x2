@@ -120,53 +120,53 @@ void hero() {
   fill(0);
   text( "ChAr1i3 LIVES!!!", 230, 200 );
   
-  //Charlies head
-  stroke(178 , 0 ,255);
-  fill(178, 0 , 255);
-  ellipse(x + 15 , y , 30 , 30);
+              //Charlies head
+              stroke(178 , 0 ,255);
+              fill(178, 0 , 255);
+              ellipse(x + 15 , y , 30 , 30);
   
-  // charlies body
-  stroke( 178 , 0 , 255);
-  fill(178 , 0, 255); 
-  rect( x,y, 30,50 ); 
+              // charlies body
+              stroke( 178 , 0 , 255);
+              fill(178 , 0, 255); 
+              rect( x,y, 30,50 ); 
   
-  //charlies left eye
-  stroke (0 );
-  fill(246,255,0);
-  ellipse( x+ 5 , y + 10, 5 ,5 );
+              //charlies left eye
+              stroke (0 );
+              fill(246,255,0);
+              ellipse( x+ 5 , y + 10, 5 ,5 );
   
-  //charlies right eye
-  stroke(0);
-  fill(246, 255, 0);
-  ellipse( x + 20, y + 10 ,5 ,5);
+            //charlies right eye
+            stroke(0);
+            fill(246, 255, 0);
+            ellipse( x + 20, y + 10 ,5 ,5);
   
-  //charlies mouth
-  stroke( 0 ) ;
-  fill(0 , 63 , 243);
-  ellipse( x + 10 , y + 30 , 10 , 20);
+          //charlies mouth
+          stroke( 0 ) ;
+          fill(0 , 63 , 243);
+          ellipse( x + 10 , y + 30 , 10 , 20);
   
-  // charlies name its under him
-  fill(0);
-  text( "COME HERE BOII!! ", x,y + 70);
+          // charlies name its under him
+          fill(0);
+          text( "COME HERE BOII!! ", x,y + 70);
   
-  //charlies arms
-  fill(178, 0, 255);
-  stroke(178, 0 , 255);
-  rect( x - 20, y + 20 , 20, 10);
-  stroke(0);
-  fill(178, 0, 255);
-  rect(x + 20, y + 20, 20, 10);
+          //charlies arms
+          fill(178, 0, 255);
+          stroke(178, 0 , 255);
+          rect( x - 20, y + 20 , 20, 10);
+          stroke(0);
+          fill(178, 0, 255);
+          rect(x + 20, y + 20, 20, 10);
   
-  //charlies hair
-  line(x+10, y  - 10, x + 15, y - 25);
-  line(x + 20, y - 10, x + 19, y - 25);
+          //charlies hair
+          line(x+10, y  - 10, x + 15, y - 25);
+            line(x + 20, y - 10, x + 19, y - 25);
 }
 void dog() {
   dogX=  dogX - (dogX-x)/30;
   dogY=  dogY - (dogY-y)/40;
   text( dogX, 10, 10 );
   text( dogY, 10, 20 );
-  //
+  //body
   fill( 162, 79, 2 );
   rect(dogX,dogY, 60,30 );
   
